@@ -5,7 +5,7 @@ export default function AppFooter() {
                 <div className="container d-flex justify-content-start gap-5">
                     <div className="py-5">
                         <ul className="list-unstyled">
-                            <li className="fw-bold fs-5"><a href="">DC COMICS</a></li>
+                            <li className="fw-bold fs-5 py-1"><a href="">DC COMICS</a></li>
                             <li><a href="">Characters</a></li>
                             <li><a href="">Comics</a></li>
                             <li><a href="">Movies</a></li>
@@ -15,14 +15,14 @@ export default function AppFooter() {
                             <li><a href="">News</a></li>
                         </ul>
                         <ul className="list-unstyled">
-                            <li className="fw-bold fs-5"><a href="">SHOP</a></li>
+                            <li className="fw-bold fs-5 py-1"><a href="">SHOP</a></li>
                             <li><a href="">Shop DC</a></li>
                             <li><a href="">Shop DC Collectibles</a></li>
                         </ul>
                     </div>
                     <div className="py-5">
                         <ul className="list-unstyled">
-                            <li className="fw-bold fs-5"><a href="">DC</a></li>
+                            <li className="fw-bold fs-5 py-1"><a href="">DC</a></li>
                             <li><a href="">Terms Of Use</a></li>
                             <li><a href="">Privacy policy (New)</a></li>
                             <li><a href="">Ad Choices</a></li>
@@ -38,7 +38,7 @@ export default function AppFooter() {
                     </div>
                     <div className="py-5">
                         <ul className="list-unstyled">
-                            <li className="fw-bold fs-5"><a href="">SITES</a></li>
+                            <li className="fw-bold fs-5 py-1"><a href="">SITES</a></li>
                             <li><a href="">DC</a></li>
                             <li><a href="">MAD Magazine</a></li>
                             <li><a href="">DC Kids</a></li>

@@ -5,7 +5,7 @@ export default function AppHeader() {
         <>
             <header className='bg-white d-flex justify-content-between align-items-center'>
                 <AppLogo />
-                <nav className="navbar navbar-expand-lg bg-body-tertiary text-white d-inline-block mx-5">
+                <nav className="navbar navbar-expand-lg bg-white text-white d-inline-block mx-5">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">CHARACTERS</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
