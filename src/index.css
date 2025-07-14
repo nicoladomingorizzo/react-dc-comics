@@ -11,7 +11,22 @@ body {
 
 }
 
+a:hover {
+  text-decoration: underline !important;
+}
+
 /* Header */
+header {
+
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 55px;
+    text-decoration-color: blue;
+    color: blue !important;
+    /* text-deco */
+  }
+
+}
 
 /* Main */
 
@@ -23,9 +38,6 @@ body {
   width: 70px;
 }
 
-.h-150 {
-  height: 150px;
-}
 
 
 /* Footer */
@@ -56,5 +68,14 @@ footer {
 }
 
 .registration {
-  background-color: black;
+  background-color: #3d3d3d;
+
+  .btn {
+    border-radius: 0;
+    border-color: blue;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
