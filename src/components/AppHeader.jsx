@@ -3,7 +3,7 @@ import AppLogo from './AppLogo';
 export default function AppHeader() {
     return (
         <>
-            <div className='bg-white d-flex justify-content-between align-items-center'>
+            <header className='bg-white d-flex justify-content-between align-items-center'>
                 <AppLogo />
                 <nav className="navbar navbar-expand-lg bg-body-tertiary text-white d-inline-block mx-5">
                     <div className="container-fluid">
@@ -44,7 +44,7 @@ export default function AppHeader() {
                         </div>
                     </div>
                 </nav>
-            </div>
+            </header>
         </>
     );
 };
