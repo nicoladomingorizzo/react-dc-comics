@@ -3,7 +3,7 @@ import AppLogo from './AppLogo';
 export default function AppHeader() {
     return (
         <>
-            <header className='bg-white d-flex justify-content-between align-items-center'>
+            <header className='bg-white d-flex justify-content-around align-items-center'>
                 <AppLogo />
                 <nav className="navbar navbar-expand-lg bg-white text-white d-inline-block mx-5">
                     <div className="container-fluid">
