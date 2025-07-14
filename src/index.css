@@ -32,12 +32,12 @@ body {
 
 footer {
   max-height: 400px;
-  background-image: url('../public/img/footer-bg.jpg');
+  background-image: url('/img/footer-bg.jpg');
   position: relative;
+  overflow: hidden;
 
   #logoFooter {
     position: absolute;
-    overflow: hidden;
     top: -80px;
     right: 80px;
   }
@@ -53,4 +53,8 @@ footer {
     }
 
   }
+}
+
+.registration {
+  background-color: black;
 }

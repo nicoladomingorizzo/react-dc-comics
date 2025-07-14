@@ -1,3 +1,5 @@
+import AppFooterRegistration from "./AppFooterRegistration";
+
 export default function AppFooter() {
     return (
         <>
@@ -51,6 +53,7 @@ export default function AppFooter() {
                     </div>
                 </div>
             </footer>
+            <AppFooterRegistration />
         </>
     );
 };
