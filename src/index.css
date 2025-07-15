@@ -43,7 +43,7 @@ main {
   position: relative;
 
   #jumbotron {
-    background-image: url('../public/img/jumbotron.jpg');
+    background-image: url('/img/jumbotron.jpg');
     background-size: cover;
     min-height: 200px;
   }
