@@ -17,7 +17,7 @@ export default function AppHeader() {
                                 return (
                                     <div key={id} className="collapse navbar-collapse" id="navbarNav">
                                         <ul className="navbar-nav">
-                                            <li className='nav-item px-1'>
+                                            <li className='nav-item px-3'>
                                                 <a className="link-underline link-underline-opacity-0 text-black" href={href}>
                                                     {name}
                                                 </a>
