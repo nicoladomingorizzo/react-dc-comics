@@ -23,7 +23,6 @@ header {
     text-underline-offset: 55px;
     text-decoration-color: blue;
     color: blue !important;
-    /* text-deco */
   }
 
 }
@@ -38,6 +37,63 @@ header {
   width: 70px;
 }
 
+main {
+
+
+  position: relative;
+
+  #jumbotron {
+    background-image: url('../public/img/jumbotron.jpg');
+    background-size: cover;
+    min-height: 200px;
+  }
+
+  #buttonSeries {
+    text-transform: uppercase;
+    border-radius: 0;
+    background-color: blue;
+    border-color: transparent;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 175px;
+    left: 30px;
+    padding: 10px 15px;
+  }
+
+}
+
+.card-img-top {
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+  }
+
+}
+
+.card-body {
+
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+h6 {
+  text-transform: uppercase;
+}
+
+#buttonLoadMore {
+  text-transform: uppercase;
+  border-radius: 0;
+  background-color: blue;
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+}
 
 
 /* Footer */
