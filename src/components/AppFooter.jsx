@@ -5,7 +5,7 @@ export default function AppFooter() {
         <>
             <footer className="bg-black">
                 <div className="container d-flex justify-content-start gap-5">
-                    <div className="py-5">
+                    <div className="py-4">
                         <ul className="list-unstyled">
                             <li className="fw-bold fs-5 py-1"><a href="#">DC COMICS</a></li>
                             <li><a href="#">Characters</a></li>
@@ -22,7 +22,7 @@ export default function AppFooter() {
                             <li><a href="#">Shop DC Collectibles</a></li>
                         </ul>
                     </div>
-                    <div className="py-5">
+                    <div className="py-4">
                         <ul className="list-unstyled">
                             <li className="fw-bold fs-5 py-1"><a href="#">DC</a></li>
                             <li><a href="#">Terms Of Use</a></li>
@@ -38,7 +38,7 @@ export default function AppFooter() {
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div className="py-5">
+                    <div className="py-4">
                         <ul className="list-unstyled">
                             <li className="fw-bold fs-5 py-1"><a href="#">SITES</a></li>
                             <li><a href="#">DC</a></li>
