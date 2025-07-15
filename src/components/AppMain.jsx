@@ -1,4 +1,4 @@
-import comics from '../db/DcComics';
+import comics from '../db/dcComics';
 import AppMainLinks from './AppMainLinks';
 
 export default function AppMain() {
