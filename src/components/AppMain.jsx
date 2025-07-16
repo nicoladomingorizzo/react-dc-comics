@@ -34,5 +34,3 @@ export default function AppMain(props) {
         </>
     );
 }
-
-// Bonus: Provare a centralizzare i dati facendoli partire tutti da App.jsx e passandoli via prop ai vari componenti che li necessitano
