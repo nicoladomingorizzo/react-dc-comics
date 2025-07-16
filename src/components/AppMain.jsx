@@ -1,5 +1,7 @@
-import comics from '../db/dcComics';
+import Card from './Card';
+import links from '../db/mainLinks';
 import AppMainLinks from './AppMainLinks';
+import comics from '../db/dcComics';
 
 export default function AppMain() {
     return (
@@ -11,16 +13,9 @@ export default function AppMain() {
                 </button>
                 <div className='container-fluid'>
                     <div className='bg-black row row-cols-xl-6 row-cols-md-4 row-cols-sm-2 row-cols-xs-1 pt-5 pb-4 px-4'>
-                        {comics.map(({ id, title, series, thumb }) => {
+                        {comics.map(({ id, thumb, title, series }) => {
                             return (
-                                <div key={id} className='pb-4'>
-                                    <div className='card-img-top'>
-                                        <img className='' src={thumb} alt={title} />
-                                    </div>
-                                    <div className='card-body'>
-                                        <h6 className='text-white py-2'>{series}</h6>
-                                    </div>
-                                </div>
+                                <Card key={id} thumb={thumb} title={title} series={series} />
                             )
                         })}
                         <button id='buttonLoadMore' className='text-center mx-auto'>
@@ -28,8 +23,16 @@ export default function AppMain() {
                         </button>
                     </div>
                 </div>
-                <AppMainLinks />
+                <div className="bg-primary">
+                    <div className="container d-flex justify-content-between align-items-center py-4">
+                        {links.map(({ id, css, src, alt, href, name }) => {
+                            return <AppMainLinks key={id} css={css} src={src} alt={alt} href={href} name={name} />
+                        })}
+                    </div>
+                </div >
             </main>
         </>
     );
 }
+
+// Bonus: Provare a centralizzare i dati facendoli partire tutti da App.jsx e passandoli via prop ai vari componenti che li necessitano
