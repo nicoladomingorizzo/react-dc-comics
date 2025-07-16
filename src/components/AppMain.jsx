@@ -1,9 +1,9 @@
 import Card from './Card';
-import links from '../db/mainLinks';
+// import links from '../db/mainLinks';
 import AppMainLinks from './AppMainLinks';
-import comics from '../db/dcComics';
+// import comics from '../db/dcComics';
 
-export default function AppMain() {
+export default function AppMain(props) {
     return (
         <>
             <main>
@@ -13,7 +13,7 @@ export default function AppMain() {
                 </button>
                 <div className='container-fluid'>
                     <div className='bg-black row row-cols-xl-6 row-cols-md-4 row-cols-sm-2 row-cols-xs-1 pt-5 pb-4 px-4'>
-                        {comics.map(({ id, thumb, title, series }) => {
+                        {props.comics.map(({ id, thumb, title, series }) => {
                             return (
                                 <Card key={id} thumb={thumb} title={title} series={series} />
                             )
@@ -25,7 +25,7 @@ export default function AppMain() {
                 </div>
                 <div className="bg-primary">
                     <div className="container d-flex justify-content-between align-items-center py-4">
-                        {links.map(({ id, css, src, alt, href, name }) => {
+                        {props.links.map(({ id, css, src, alt, href, name }) => {
                             return <AppMainLinks key={id} css={css} src={src} alt={alt} href={href} name={name} />
                         })}
                     </div>

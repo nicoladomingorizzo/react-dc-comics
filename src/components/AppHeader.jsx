@@ -1,7 +1,7 @@
 import AppLogo from './AppLogo';
-import navElements from '../db/navElements';
+//import navElements from '../db/navElements';
 
-export default function AppHeader() {
+export default function AppHeader(props) {
     return (
         <>
             <header className='bg-white d-flex justify-content-around align-items-center'>
@@ -13,7 +13,7 @@ export default function AppHeader() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         {
-                            navElements.map(({ id, href, name }) => {
+                            props.navElements.map(({ id, href, name }) => {
                                 return (
                                     <div key={id} className="collapse navbar-collapse" id="navbarNav">
                                         <ul className="navbar-nav">

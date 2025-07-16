@@ -1,19 +1,18 @@
 import AppFooterRegistration from "./AppFooterRegistration";
-import dcComics from "../db/dcComicsLinks";
-import shop from "../db/shopLinks";
-import dc from "../db/dcLinks"
-import sites from "../db/sitesLinks";
+// import dcComics from "../db/dcComicsLinks";
+// import shop from "../db/shopLinks";
+// import dc from "../db/dcLinks"
+// import sites from "../db/sitesLinks";
 
-export default function AppFooter() {
+export default function AppFooter(props) {
     return (
         <>
             <footer className="bg-black">
                 <div className="container d-flex justify-content-start gap-5">
                     <div className="py-4">
                         <h4 className="py-1 text-white">DC COMICS</h4>
-
                         <ul className="list-unstyled">
-                            {dcComics.map(({ id, href, name }) => {
+                            {props.dcComicsLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id} ><a href={href}>{name}</a></li>
                                 )
@@ -21,9 +20,8 @@ export default function AppFooter() {
                         </ul>
                         <h4 className="py-1 text-white">SHOP</h4>
                         <ul className="list-unstyled">
-                            {shop.map(({ id, href, name }) => {
+                            {props.shopLinks.map(({ id, href, name }) => {
                                 return (
-
                                     <li key={id}><a href={href}>{name}</a></li>
                                 )
                             })}
@@ -32,7 +30,7 @@ export default function AppFooter() {
                     <div className="py-4">
                         <h4 className="py-1 text-white">DC</h4>
                         <ul className="list-unstyled">
-                            {dc.map(({ id, href, name }) => {
+                            {props.dcLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id}><a href={href}>{name}</a></li>
                                 )
@@ -42,7 +40,7 @@ export default function AppFooter() {
                     <div className="py-4">
                         <h4 className="py-1 text-white">SITES</h4>
                         <ul className="list-unstyled">
-                            {sites.map(({ id, href, name }) => {
+                            {props.sitesLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id}><a href={href}>{name}</a></li>
                                 )

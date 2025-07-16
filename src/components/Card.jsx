@@ -1,5 +1,3 @@
-import comics from '../db/dcComics';
-
 export default function Card(props) {
     return (
         <div className='pb-4'>
