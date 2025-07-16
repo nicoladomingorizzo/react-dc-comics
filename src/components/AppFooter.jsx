@@ -4,7 +4,7 @@ import AppFooterRegistration from "./AppFooterRegistration";
 // import dc from "../db/dcLinks"
 // import sites from "../db/sitesLinks";
 
-export default function AppFooter(props) {
+export default function AppFooter({ dcComicsLinks, shopLinks, dcLinks, sitesLinks }) {
     return (
         <>
             <footer className="bg-black">
@@ -12,7 +12,7 @@ export default function AppFooter(props) {
                     <div className="py-4">
                         <h4 className="py-1 text-white">DC COMICS</h4>
                         <ul className="list-unstyled">
-                            {props.dcComicsLinks.map(({ id, href, name }) => {
+                            {dcComicsLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id} ><a href={href}>{name}</a></li>
                                 )
@@ -20,7 +20,7 @@ export default function AppFooter(props) {
                         </ul>
                         <h4 className="py-1 text-white">SHOP</h4>
                         <ul className="list-unstyled">
-                            {props.shopLinks.map(({ id, href, name }) => {
+                            {shopLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id}><a href={href}>{name}</a></li>
                                 )
@@ -30,7 +30,7 @@ export default function AppFooter(props) {
                     <div className="py-4">
                         <h4 className="py-1 text-white">DC</h4>
                         <ul className="list-unstyled">
-                            {props.dcLinks.map(({ id, href, name }) => {
+                            {dcLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id}><a href={href}>{name}</a></li>
                                 )
@@ -40,7 +40,7 @@ export default function AppFooter(props) {
                     <div className="py-4">
                         <h4 className="py-1 text-white">SITES</h4>
                         <ul className="list-unstyled">
-                            {props.sitesLinks.map(({ id, href, name }) => {
+                            {sitesLinks.map(({ id, href, name }) => {
                                 return (
                                     <li key={id}><a href={href}>{name}</a></li>
                                 )
